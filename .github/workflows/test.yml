@@ -20,8 +20,8 @@ jobs:
         with:
           fetch-depth: 0
           node-version: ${{matrix.node-version}}
-      - uses: pnpm/actions/setup-node@v4
+      - uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 10.6.5
       - run: pnpm install
       - run: pnpm test
